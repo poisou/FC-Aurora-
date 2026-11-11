@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="styles/app.qss">resources/styles/app.qss</file>
+        <file alias="icons/app.svg">resources/icons/app.svg</file>
+        <file alias="icons/upload.svg">resources/icons/upload.svg</file>
+        <file alias="icons/folder-open.svg">resources/icons/folder-open.svg</file>
+        <file alias="icons/trash-2.svg">resources/icons/trash-2.svg</file>
+        <file alias="icons/chevron-left.svg">resources/icons/chevron-left.svg</file>
+        <file alias="icons/chevron-right.svg">resources/icons/chevron-right.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AuroraFrameEditDialog</class>
+ <widget class="QDialog" name="AuroraFrameEditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1355</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>数据帧信息</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QFrame#headerFrame,
+QFrame#auroraParamSimpleFrame,
+QFrame#sequenceParamFrame {
+    background: #FFFFFF;
+    border: 1px solid #8DA4B8;
+    border-radius: 3px;
+}
+QLabel#dialogTitle {
+    color: #1F2D3A;
+    font-size: 16px;
+    font-weight: 600;
+}
+QLabel#sectionTitle {
+    color: #1F2D3A;
+    font-size: 14px;
+    font-weight: 600;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <property name="spacing">
+    <number>10</number>
+   </property>
+   <property name="leftMargin">
+    <number>18</number>
+   </property>
+   <property name="topMargin">
+    <number>14</number>
+   </property>
+   <property name="rightMargin">
+    <number>18</number>
+   </property>
+   <property name="bottomMargin">
+    <number>14</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="dialogTitle">
+     <property name="text">
+      <string>数据帧信息</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="dataParamTitle">
+     <property name="text">
+      <string>数据参数设置</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="headerSetTitle">
+     <property name="text">
+      <string>Aurora参数设置</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="headerFrame">
+     <property name="visible">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="headerGridLayout">
+      <property name="leftMargin">
+       <number>16</number>
+      </property>
+      <property name="topMargin">
+       <number>12</number>
+      </property>
+      <property name="rightMargin">
+       <number>16</number>
+      </property>
+      <property name="bottomMargin">
+       <number>12</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>10</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>12</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="dIdLabel">
+        <property name="text">
+         <string>D_ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="dIdEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>010001</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="rCtlLabel">
+        <property name="text">
+         <string>R_CTL:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLineEdit" name="rCtlEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>04</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="sIdLabel">
+        <property name="text">
+         <string>S_ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLineEdit" name="sIdEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>020001</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="csCtlLabel">
+        <property name="text">
+         <string>CS_CTL:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QLineEdit" name="csCtlEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QLabel" name="fCtlLabel">
+        <property name="text">
+         <string>F_CTL:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="9">
+       <widget class="QLineEdit" name="fCtlEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>3A0018</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="10">
+       <widget class="QLabel" name="typeLabel">
+        <property name="text">
+         <string>TYPE:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="11">
+       <widget class="QLineEdit" name="typeEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>49</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="seqCnLabel">
+        <property name="text">
+         <string>SEQ_CN:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="seqCnEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0000</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="dfCtlLabel">
+        <property name="text">
+         <string>DF_CTL:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="dfCtlEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLabel" name="seqIdLabel">
+        <property name="text">
+         <string>SEQ_ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLineEdit" name="seqIdEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLabel" name="rxIdLabel">
+        <property name="text">
+         <string>RX_ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QLineEdit" name="rxIdEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>FFFF</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="8">
+       <widget class="QLabel" name="oxIdLabel">
+        <property name="text">
+         <string>OX_ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="9">
+       <widget class="QLineEdit" name="oxIdEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0001</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="10">
+       <widget class="QLabel" name="parameterLabel">
+        <property name="text">
+         <string>Paramet</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="11">
+       <widget class="QLineEdit" name="parameterEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00000000</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="msgIdLabel">
+        <property name="text">
+         <string>MSG_ID:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="msgIdEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="res0Label">
+        <property name="text">
+         <string>RES0:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="res0Edit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLabel" name="res1Label">
+        <property name="text">
+         <string>RES1:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLineEdit" name="res1Edit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLabel" name="msgLeLabel">
+        <property name="text">
+         <string>MSG_LE:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="7">
+       <widget class="QLineEdit" name="msgLeEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>000830</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="8">
+       <widget class="QLabel" name="msgPrLabel">
+        <property name="text">
+         <string>MSG_PR:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="9">
+       <widget class="QLineEdit" name="msgPrEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>00</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="10">
+       <widget class="QLabel" name="msgLLabel">
+        <property name="text">
+         <string>MSG_L:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="11">
+       <widget class="QLineEdit" name="msgLEdit">
+        <property name="minimumSize">
+         <size>
+          <width>88</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="auroraParamSimpleFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>62</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#auroraParamSimpleFrame{
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(70,90,120);
+border-radius:10px;
+font: 75 11pt &quot;微软雅黑&quot;;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="auroraParamSimpleLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>16</number>
+      </property>
+      <property name="topMargin">
+       <number>14</number>
+      </property>
+      <property name="rightMargin">
+       <number>16</number>
+      </property>
+      <property name="bottomMargin">
+       <number>14</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="pwLabel">
+        <property name="text">
+         <string>PW:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pwEdit">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="priLabel">
+        <property name="text">
+         <string>PRI:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="priEdit">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="toaLabel">
+        <property name="text">
+         <string>TOA:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="toaEdit">
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="auroraParamSimpleSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="sequenceParamFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>54</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#sequenceParamFrame{
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(70,90,120);
+border-radius:10px;
+font: 75 11pt &quot;微软雅黑&quot;;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="sequenceParamLayout">
+      <property name="spacing">
+       <number>8</number>
+      </property>
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <item>
+       <widget class="QCheckBox" name="pwSequenceCheckBox">
+        <property name="text">
+         <string>PW</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="pwInitialValueLabel">
+        <property name="text">
+         <string>初始值:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pwInitialValueEdit">
+        <property name="minimumSize">
+         <size>
+          <width>82</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="pwStepValueLabel">
+        <property name="text">
+         <string>步进:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="pwStepValueEdit">
+        <property name="minimumSize">
+         <size>
+          <width>82</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="sequenceSeparator1">
+        <property name="frameShape">
+         <enum>QFrame::VLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="priSequenceCheckBox">
+        <property name="text">
+         <string>PRI</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="priInitialValueLabel">
+        <property name="text">
+         <string>初始值:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="priInitialValueEdit">
+        <property name="minimumSize">
+         <size>
+          <width>82</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="priStepValueLabel">
+        <property name="text">
+         <string>步进:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="priStepValueEdit">
+        <property name="minimumSize">
+         <size>
+          <width>82</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="sequenceSeparator2">
+        <property name="frameShape">
+         <enum>QFrame::VLine</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="toaSequenceCheckBox">
+        <property name="text">
+         <string>TOA</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="toaInitialValueLabel">
+        <property name="text">
+         <string>初始值:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="toaInitialValueEdit">
+        <property name="minimumSize">
+         <size>
+          <width>82</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="toaStepValueLabel">
+        <property name="text">
+         <string>步进:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="toaStepValueEdit">
+        <property name="minimumSize">
+         <size>
+          <width>82</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="sequenceParamSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="valueToolbarLayout">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="valueTitle">
+       <property name="text">
+        <string>数据值设置</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="valueToolbarSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QComboBox" name="baseCombo">
+       <property name="minimumSize">
+        <size>
+         <width>88</width>
+         <height>30</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>16进制</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10进制</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="randomRadioButton">
+       <property name="text">
+        <string>随机数</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="lengthLabel">
+       <property name="text">
+        <string>长度:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="lengthSpinBox">
+       <property name="minimumSize">
+        <size>
+         <width>82</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="minimum">
+        <number>1024</number>
+       </property>
+       <property name="maximum">
+        <number>1024</number>
+       </property>
+       <property name="value">
+        <number>1024</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="packetCountLabel">
+       <property name="text">
+        <string>包数:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="packetCountSpinBox">
+       <property name="minimumSize">
+        <size>
+         <width>82</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>100000</number>
+       </property>
+       <property name="value">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearButton">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="generateButton">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+       </property>
+       <property name="text">
+        <string>生成</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="valueTable">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>330</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#valueTable{
+background-color: rgb(255,255,255);
+border-left:2px solid rgb(70,90,120);
+border-right:2px solid rgb(70,90,120);
+border-bottom:2px solid rgb(70,90,120);
+border-top:2px solid rgb(70,90,120);
+border-radius:5px;
+font: 75 11pt &quot;微软雅黑&quot;;
+color: rgb(0,0,0);
+gridline-color:rgb(70,90,120);
+}
+Qtablewidget::item{
+border:1px solid rgb(70,90,120);
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="valuePageLayout">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QSpinBox" name="valuePageSpinBox">
+       <property name="minimumSize">
+        <size>
+         <width>72</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="valuePageCountLabel">
+       <property name="text">
+        <string>/ 1 页</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="valuePageSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="valueJumpButton">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+       </property>
+       <property name="text">
+        <string>跳转</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="valuePrevButton">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+       </property>
+       <property name="text">
+        <string>上一页</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="valueNextButton">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+       </property>
+       <property name="text">
+        <string>下一页</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>wid_reviewset</class>
+ <widget class="QWidget" name="wid_reviewset">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>953</width>
+    <height>726</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_14">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout_13">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget_6" native="true">
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget_7" native="true">
+            <layout class="QGridLayout" name="gridLayout_11">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>8</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="2">
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>554</width>
+                 <height>27</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>数据回放</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QPushButton" name="pushButton_3">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(19, 187, 255);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>回放配置</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QWidget" name="widget_5" native="true">
+            <layout class="QGridLayout" name="gridLayout_10">
+             <item row="0" column="3">
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>221</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_4">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>回放文件路径:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit">
+               <property name="minimumSize">
+                <size>
+                 <width>300</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 75 11pt &quot;微软雅黑&quot;;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QToolButton" name="toolButton_choosePath">
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QTableWidget" name="tableWidget_data">
+            <property name="styleSheet">
+             <string notr="true">#tableWidget_data{
+background-color: rgb(255,255,255);
+border-left:2px solid rgb(70,90,120);
+border-right:2px solid rgb(70,90,120);
+border-bottom:2px solid rgb(70,90,120);
+border-top:2px solid rgb(70,90,120);
+border-radius:5px;
+font: 75 11pt &quot;微软雅黑&quot;;
+color: rgb(0,0,0);
+gridline-color:rgb(70,90,120);
+}
+Qtablewidget::item{
+border:1px solid rgb(70,90,120);
+}</string>
+            </property>
+            <column>
+             <property name="text">
+              <string>序号</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>值</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QWidget" name="widget_8" native="true">
+            <layout class="QGridLayout" name="gridLayout_15">
+             <item row="0" column="0">
+              <widget class="QComboBox" name="comboBox_type">
+               <property name="minimumSize">
+                <size>
+                 <width>80</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">border:1px solid rgb(70,90,120);
+color: rgb(0,0,0);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(255,255,255);
+border:none;</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>16进制</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>10进制</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <spacer name="horizontalSpacer_7">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QTableWidget" name="tableWidget_info">
+            <property name="styleSheet">
+             <string notr="true">#tableWidget_info{
+background-color: rgb(255, 255, 255);
+border:1px solid rgb(70,90,120);
+border-radius:3px;
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QWidget" name="widget_9" native="true">
+            <layout class="QGridLayout" name="gridLayout_16">
+             <item row="0" column="7">
+              <widget class="QPushButton" name="pbtn_up">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>上一页</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="4">
+              <spacer name="horizontalSpacer_8">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="6">
+              <widget class="QPushButton" name="pbtn_FirstPage">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>首页</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_8">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0,0,0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255,255,255);</string>
+               </property>
+               <property name="text">
+                <string>/</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_5">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0,0,0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255,255,255);</string>
+               </property>
+               <property name="text">
+                <string>页</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="8">
+              <widget class="QPushButton" name="pbtn_down">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>下一页</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_pageall">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0,0,0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255,255,255);</string>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QSpinBox" name="sbox_currentPage">
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0,0,0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255,255,255);</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::NoButtons</enum>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="5">
+              <widget class="QPushButton" name="pbtn_turnTo">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>跳转</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="9">
+              <widget class="QPushButton" name="pbtn_end">
+               <property name="minimumSize">
+                <size>
+                 <width>75</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>尾页</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_9">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QWidget" name="widget_4" native="true">
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="1" column="0">
+           <widget class="QWidget" name="wid_set" native="true">
+            <property name="styleSheet">
+             <string notr="true">#wid_set{
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(70,90,120);
+border-radius:10px;
+font: 75 11pt &quot;微软雅黑&quot;;
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="leftMargin">
+              <number>9</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QWidget" name="widget_2" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_2">
+                <property name="leftMargin">
+                 <number>0</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <property name="rightMargin">
+                 <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>0</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(18,165,202);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>错误处理策略</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_2">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>756</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QWidget" name="wid_type1" native="true">
+               <property name="styleSheet">
+                <string notr="true">#wid_type1{
+background-color: rgb(255, 255, 255);
+border:2px solid rgb(70,90,120);
+border-radius:10px;
+font: 75 11pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QRadioButton" name="radioButton_2">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0,0,0);
+font: 75 10pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>丢弃错误帧(默认)</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QWidget" name="wid_type2" native="true">
+               <property name="styleSheet">
+                <string notr="true">#wid_type2{
+background-color: rgb(255,255,255);
+border:2px solid rgb(70,90,120);
+border-radius:10px;
+font: 75 11pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QRadioButton" name="radioButton_3">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0,0,0);
+font: 75 10pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>记录错误但继续发送</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QWidget" name="wid_type3" native="true">
+               <property name="styleSheet">
+                <string notr="true">#wid_type3{
+background-color: rgb(255,255,255);
+border:2px solid rgb(70,90,120);
+border-radius:10px;
+font: 75 11pt &quot;微软雅黑&quot;;
+}</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <property name="leftMargin">
+                 <number>5</number>
+                </property>
+                <property name="topMargin">
+                 <number>5</number>
+                </property>
+                <property name="rightMargin">
+                 <number>5</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>5</number>
+                </property>
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <item row="0" column="0">
+                 <widget class="QRadioButton" name="radioButton_4">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0,0,0);
+font: 75 10pt &quot;微软雅黑&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>遇到错误立即暂停</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QWidget" name="widget_3" native="true">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255,255,255);</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_6">
+                <item row="0" column="0">
+                 <widget class="QPushButton" name="pushButton">
+                  <property name="minimumSize">
+                   <size>
+                    <width>75</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(19, 187, 255);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+                  </property>
+                  <property name="text">
+                   <string>保存配置</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <spacer name="horizontalSpacer_3">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>767</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QWidget" name="widget" native="true">
+            <layout class="QGridLayout" name="gridLayout">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="2">
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>554</width>
+                 <height>27</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(0, 0, 0);
+font: 75 14pt &quot;微软雅黑&quot;;
+background-color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>回放配置</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton_2">
+               <property name="minimumSize">
+                <size>
+                 <width>100</width>
+                 <height>30</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+border:1px solid rgb(70,90,120);
+color: rgb(255, 255, 255);
+border-radius:3px;
+font: 75 11pt &quot;微软雅黑&quot;;
+background-color: rgb(153,217,234);
+}
+QPushButton:hover{
+color: rgb(25, 118, 210);
+background-color: rgb(227, 236, 255);
+};</string>
+               </property>
+               <property name="text">
+                <string>返回</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../../../../WTTools/WTRecordPlugin/Res.qrc">
+                 <normaloff>:/Images/Icons1/Icon_Back1.png</normaloff>:/Images/Icons1/Icon_Back1.png</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../../WTTools/WTRecordPlugin/Res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

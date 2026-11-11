@@ -1,0 +1,22 @@
+build*/
+artifacts/
+*.user
+*.autosave
+.qmake.stash
+
+# 编译输出
+release/
+debug/
+*.o
+*.obj
+*.exe
+*.dll
+object_script.*
+
+# qmake / uic / moc / rcc 自动生成
+Makefile
+Makefile.*
+ui_*.h
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
