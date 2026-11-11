@@ -23,3 +23,4 @@ qrc_*.cpp
 
 # 历史版本的旧副本目录，不参与 DataSimulator.pro 编译
 UIWidget/
+Threadpro/
